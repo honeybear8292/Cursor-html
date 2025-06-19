@@ -1,2 +1,0 @@
-# Cursor-html
-cursor practice
