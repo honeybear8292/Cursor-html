@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K-pop 소개</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          keyframes: {
+            fadein: {
+              '0%': { opacity: 0, transform: 'translateY(30px)' },
+              '100%': { opacity: 1, transform: 'translateY(0)' },
+            },
+          },
+          animation: {
+            'fadein': 'fadein 1s ease-out forwards',
+            'fadein-delay-1': 'fadein 1s 0.2s ease-out forwards',
+            'fadein-delay-2': 'fadein 1s 0.4s ease-out forwards',
+            'fadein-delay-3': 'fadein 1s 0.6s ease-out forwards',
+            'fadein-delay-4': 'fadein 1s 0.8s ease-out forwards',
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-gradient-to-br from-blue-100 via-blue-200 to-blue-300 min-h-screen flex flex-col">
+  <!-- 네비게이션 바 -->
+  <nav class="fixed top-0 left-0 w-full z-30 backdrop-blur-xl bg-white/40 border-b border-white/30 shadow-md">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-2">
+      <span class="font-extrabold text-blue-700 text-xl tracking-wider drop-shadow">K-POP WORLD</span>
+      <ul class="flex gap-2 md:gap-4 lg:gap-6 text-base md:text-lg font-semibold">
+        <li><a href="index.html" class="px-3 py-1 rounded-xl transition hover:bg-blue-200/60 hover:text-blue-900 focus:bg-blue-300/70 focus:text-blue-900 active:bg-blue-400/80 text-blue-700 bg-white/60 shadow-sm">K-POP</a></li>
+        <li><a href="uspop.html" class="px-3 py-1 rounded-xl transition hover:bg-blue-200/60 hover:text-blue-900 focus:bg-blue-300/70 focus:text-blue-900 text-blue-700">미국 팝</a></li>
+        <li><a href="ukpop.html" class="px-3 py-1 rounded-xl transition hover:bg-blue-200/60 hover:text-blue-900 focus:bg-blue-300/70 focus:text-blue-900 text-blue-700">영국 팝</a></li>
+        <li><a href="jpop.html" class="px-3 py-1 rounded-xl transition hover:bg-blue-200/60 hover:text-blue-900 focus:bg-blue-300/70 focus:text-blue-900 text-blue-700">일본 팝</a></li>
+        <li><a href="latinpop.html" class="px-3 py-1 rounded-xl transition hover:bg-blue-200/60 hover:text-blue-900 focus:bg-blue-300/70 focus:text-blue-900 text-blue-700">라틴 팝</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="h-16"></div> <!-- 네비게이션 바 높이만큼 여백 -->
+  <div class="relative w-full">
+    <svg class="w-full h-24 md:h-32 lg:h-40" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,60 Q360,120 720,60 T1440,60 V120 H0 V60Z" fill="#3b82f6" fill-opacity="0.18"/>
+      <path d="M0,80 Q360,20 720,80 T1440,80 V120 H0 V80Z" fill="#2563eb" fill-opacity="0.13"/>
+    </svg>
+  </div>
+  <main class="flex-1 flex flex-col items-center justify-start py-8 px-2 md:px-0">
+    <!-- 최신 K-POP 뉴스 섹션 -->
+    <section class="w-full max-w-3xl mb-8 animate-fadein">
+      <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-4 flex items-center gap-2">
+        <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        최근 K-POP 뉴스
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- BTS 뉴스 -->
+        <div class="backdrop-blur-xl bg-white/50 border border-white/30 shadow-lg rounded-2xl p-4 flex flex-col animate-fadein-delay-1">
+          <h3 class="text-lg font-semibold text-purple-700 mb-1">BTS, 2026년 완전체 컴백 예정</h3>
+          <p class="text-gray-700 text-sm mb-2">BTS(방탄소년단)가 2026년 완전체로 컴백할 예정이라는 소식이 전해졌습니다. 멤버들의 군 복무가 모두 끝난 후, 팬들은 오랜만의 완전체 활동에 큰 기대를 모으고 있습니다.</p>
+          <a href="https://www.soompi.com/article/1693707wpp/bts-reported-to-be-making-full-group-comeback-in-march-2026-bighit-music-briefly-responds" target="_blank" class="text-blue-600 underline text-xs">Soompi 기사 보기</a>
+        </div>
+        <!-- THE BOYZ 뉴스 -->
+        <div class="backdrop-blur-xl bg-white/50 border border-white/30 shadow-lg rounded-2xl p-4 flex flex-col animate-fadein-delay-2">
+          <h3 class="text-lg font-semibold text-pink-700 mb-1">THE BOYZ, 멤버 퇴출 및 논란</h3>
+          <p class="text-gray-700 text-sm mb-2">THE BOYZ의 주학년이 최근 논란으로 인해 팀에서 퇴출되고 소속사와의 계약도 해지되었습니다. 팬들과 대중 사이에서 다양한 반응과 논의가 이어지고 있습니다.</p>
+          <a href="https://www.koreaboo.com/news/ju-haknyeon-kicked-out-the-boyz-contract-terminated-meeting-japanese-pornstar/" target="_blank" class="text-blue-600 underline text-xs">Koreaboo 기사 보기</a>
+        </div>
+      </div>
+    </section>
+    <div class="backdrop-blur-2xl bg-white/30 border border-white/40 shadow-2xl rounded-3xl max-w-2xl w-full px-8 py-8 text-center mb-10 animate-fadein">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%EA%B5%AD%EA%B8%B0.png" alt="대한민국 국기" class="w-24 h-16 mx-auto mb-4 rounded-lg shadow-lg border border-white/60 bg-white/30 animate-fadein-delay-1" loading="lazy">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-blue-700 mb-4 tracking-wide drop-shadow animate-fadein-delay-2">K-pop이란?</h1>
+      <p class="text-gray-700 text-lg md:text-xl leading-relaxed mb-4 animate-fadein-delay-3">
+        <span class="text-blue-600 font-bold">K-pop</span>은 대한민국에서 시작된 현대 대중음악 장르로,<br>
+        <span class="text-blue-500 font-semibold">Korean Pop</span>의 줄임말입니다.<br>
+        1990년대 후반부터 본격적으로 발전하기 시작해, 현재는 전 세계적으로 큰 인기를 끌고 있습니다.<br>
+        K-pop은 음악뿐만 아니라 화려한 퍼포먼스, 독창적인 콘셉트, 세련된 패션, 팬과의 소통 문화 등 다양한 요소가 결합된 종합 예술로 평가받습니다.<br>
+        유튜브, SNS 등 디지털 플랫폼을 통해 글로벌 팬덤이 형성되었고, 한국어 가사와 한국 문화를 자연스럽게 알리는 역할도 하고 있습니다.
+      </p>
+      <p class="text-gray-600 text-base md:text-lg animate-fadein-delay-4">
+        대표적인 K-pop 그룹과 아티스트들은 각자의 개성과 음악성으로 세계 음악 시장에서 두각을 나타내고 있습니다.
+      </p>
+      <div class="mt-8 text-left space-y-6 animate-fadein-delay-4">
+        <h2 class="text-2xl font-bold text-blue-800 mb-2">K-pop의 역사</h2>
+        <p class="text-gray-700 text-base md:text-lg">K-pop은 1990년대 초반 서태지와 아이들, 듀스 등 혁신적인 아티스트들의 등장으로 본격적인 현대적 형태를 갖추기 시작했습니다. 이후 H.O.T., 젝스키스, S.E.S, 핑클 등 1세대 아이돌 그룹이 대중적 인기를 얻으며 아이돌 시스템이 정착되었습니다. 2000년대에는 동방신기, 슈퍼주니어, 소녀시대, 빅뱅, 원더걸스 등 2세대 아이돌이 등장해 한류 열풍을 이끌었고, 2010년대 이후에는 BTS, EXO, TWICE, BLACKPINK 등 글로벌 시장에서 큰 성공을 거둔 3~4세대 그룹들이 활약하고 있습니다.</p>
+        <h2 class="text-2xl font-bold text-blue-800 mb-2">K-pop의 특징</h2>
+        <ul class="list-disc pl-6 text-gray-700 text-base md:text-lg space-y-1">
+          <li><span class="font-semibold text-blue-600">아이돌 시스템</span>: 체계적인 연습생 시스템과 기획사 중심의 제작 방식</li>
+          <li><span class="font-semibold text-blue-600">퍼포먼스와 비주얼</span>: 화려한 군무, 독특한 콘셉트, 세련된 스타일링</li>
+          <li><span class="font-semibold text-blue-600">장르의 다양성</span>: 팝, 힙합, R&B, EDM, 록 등 다양한 음악 장르의 융합</li>
+          <li><span class="font-semibold text-blue-600">팬덤 문화</span>: 팬클럽, 공식 굿즈, 팬미팅, 팬덤명 등 독특한 팬 문화</li>
+          <li><span class="font-semibold text-blue-600">글로벌 전략</span>: 해외 진출, 다국적 멤버 구성, SNS·유튜브 등 디지털 플랫폼 활용</li>
+        </ul>
+        <h2 class="text-2xl font-bold text-blue-800 mb-2">세계적 영향과 한류</h2>
+        <p class="text-gray-700 text-base md:text-lg">K-pop은 아시아를 넘어 북미, 유럽, 남미, 중동 등 전 세계적으로 폭넓은 인기를 얻고 있습니다. BTS, BLACKPINK 등은 빌보드 차트, 코첼라 등 세계적 무대에서 활약하며, K-pop을 통한 한국어·한국문화 확산에도 큰 기여를 하고 있습니다. 각국의 팬들은 커버댄스, 팬아트, 번역 등 다양한 방식으로 K-pop 문화를 즐기고 있습니다.</p>
+        <h2 class="text-2xl font-bold text-blue-800 mb-2">K-pop의 사회·문화적 영향</h2>
+        <ul class="list-disc pl-6 text-gray-700 text-base md:text-lg space-y-1">
+          <li>청소년 문화, 패션, 뷰티 트렌드에 큰 영향</li>
+          <li>다양한 사회적 메시지(자존감, 청춘, 사회문제 등) 전달</li>
+          <li>글로벌 팬덤의 사회공헌 활동(기부, 캠페인 등)</li>
+          <li>한국 경제 및 관광 산업 활성화</li>
+        </ul>
+        <h2 class="text-2xl font-bold text-blue-800 mb-2">참고</h2>
+        <p class="text-gray-500 text-xs">이 페이지의 K-pop 정보는 <a href="https://namu.wiki/w/K-POP" target="_blank" class="underline text-blue-500">나무위키 K-POP 문서</a>를 참고하여 작성되었습니다.</p>
+      </div>
+    </div>
+    <section class="w-full max-w-5xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- BTS -->
+      <div class="backdrop-blur-xl bg-white/40 border border-white/30 shadow-xl rounded-2xl p-6 flex flex-col items-center transition hover:scale-105 hover:shadow-2xl animate-fadein-delay-1" style="box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/BTS_logo_%282017%29.png" alt="BTS 공식 로고" class="w-28 h-28 mb-4 rounded-xl bg-white/70 p-2 object-contain shadow-lg border border-white/70" loading="lazy">
+        <h2 class="text-xl font-bold text-blue-700 mb-2">BTS (방탄소년단)</h2>
+        <p class="text-gray-700 text-sm text-center">2013년 데뷔한 7인조 보이그룹으로, 강렬한 퍼포먼스와 진정성 있는 메시지, 글로벌 팬덤 '아미(ARMY)'로 세계적인 인기를 얻고 있습니다. 빌보드 차트 1위, UN 연설 등 K-pop의 세계화에 큰 역할을 했습니다.</p>
+      </div>
+      <!-- BLACKPINK -->
+      <div class="backdrop-blur-xl bg-white/40 border border-white/30 shadow-xl rounded-2xl p-6 flex flex-col items-center transition hover:scale-105 hover:shadow-2xl animate-fadein-delay-2" style="box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Blackpink_logo.svg" alt="BLACKPINK 공식 로고" class="w-32 h-16 mb-4 rounded-xl bg-white/70 p-2 object-contain shadow-lg border border-white/70" loading="lazy">
+        <h2 class="text-xl font-bold text-pink-500 mb-2">BLACKPINK</h2>
+        <p class="text-gray-700 text-sm text-center">2016년 데뷔한 4인조 걸그룹으로, 강렬한 카리스마와 세련된 음악, 글로벌한 인기로 K-pop 걸그룹 중 최초로 코첼라 메인 무대에 올랐습니다. 유튜브 구독자 수 세계 1위 여성 아티스트 그룹입니다.</p>
+      </div>
+      <!-- TWICE -->
+      <div class="backdrop-blur-xl bg-white/40 border border-white/30 shadow-xl rounded-2xl p-6 flex flex-col items-center transition hover:scale-105 hover:shadow-2xl animate-fadein-delay-3" style="box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Logo_of_TWICE.svg" alt="TWICE 공식 로고" class="w-24 h-24 mb-4 rounded-xl bg-white/70 p-2 object-contain shadow-lg border border-white/70" loading="lazy">
+        <h2 class="text-xl font-bold text-yellow-500 mb-2">TWICE</h2>
+        <p class="text-gray-700 text-sm text-center">2015년 데뷔한 9인조 걸그룹으로, 밝고 에너지 넘치는 콘셉트와 중독성 있는 음악으로 사랑받고 있습니다. 일본 등 해외에서도 큰 인기를 누리며 K-pop 대표 걸그룹으로 자리매김했습니다.</p>
+      </div>
+      <!-- EXO -->
+      <div class="backdrop-blur-xl bg-white/40 border border-white/30 shadow-xl rounded-2xl p-6 flex flex-col items-center transition hover:scale-105 hover:shadow-2xl animate-fadein-delay-4" style="box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Logo_de_EXO.png" alt="EXO 공식 로고" class="w-28 h-20 mb-4 rounded-xl bg-white/70 p-2 object-contain shadow-lg border border-white/70" loading="lazy">
+        <h2 class="text-xl font-bold text-gray-800 mb-2">EXO</h2>
+        <p class="text-gray-700 text-sm text-center">2012년 데뷔한 보이그룹으로, 파워풀한 퍼포먼스와 다양한 음악 장르 소화력, 탄탄한 팬덤을 자랑합니다. '으르렁', 'Love Shot' 등 수많은 히트곡을 보유하고 있습니다.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="text-center text-blue-900 text-xs py-4 opacity-70">
+    © 2024 K-pop 소개 페이지
+  </footer>
+</body>
+</html>

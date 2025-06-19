@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>미국 팝(US POP) 소개</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          keyframes: {
+            fadein: {
+              '0%': { opacity: 0, transform: 'translateY(30px)' },
+              '100%': { opacity: 1, transform: 'translateY(0)' },
+            },
+          },
+          animation: {
+            'fadein': 'fadein 1s ease-out forwards',
+            'fadein-delay-1': 'fadein 1s 0.2s ease-out forwards',
+            'fadein-delay-2': 'fadein 1s 0.4s ease-out forwards',
+            'fadein-delay-3': 'fadein 1s 0.6s ease-out forwards',
+            'fadein-delay-4': 'fadein 1s 0.8s ease-out forwards',
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-gradient-to-br from-blue-100 via-blue-200 to-blue-300 min-h-screen flex flex-col">
+  <!-- 네비게이션 바 (K-POP WORLD, 미국 팝 메뉴 활성화) -->
+  <nav class="fixed top-0 left-0 w-full z-30 backdrop-blur-xl bg-white/40 border-b border-white/30 shadow-md">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-2">
+      <span class="font-extrabold text-blue-700 text-xl tracking-wider drop-shadow">K-POP WORLD</span>
+      <ul class="flex gap-2 md:gap-4 lg:gap-6 text-base md:text-lg font-semibold">
+        <li><a href="index.html" class="px-3 py-1 rounded-xl transition hover:bg-blue-200/60 hover:text-blue-900 focus:bg-blue-300/70 focus:text-blue-900 active:bg-blue-400/80 text-blue-700 bg-white/60 shadow-sm">K-POP</a></li>
+        <li><a href="uspop.html" class="px-3 py-1 rounded-xl transition bg-white/60 shadow-sm text-blue-700">미국 팝</a></li>
+        <li><a href="ukpop.html" class="px-3 py-1 rounded-xl transition hover:bg-blue-200/60 hover:text-blue-900 focus:bg-blue-300/70 focus:text-blue-900 text-blue-700">영국 팝</a></li>
+        <li><a href="jpop.html" class="px-3 py-1 rounded-xl transition hover:bg-blue-200/60 hover:text-blue-900 focus:bg-blue-300/70 focus:text-blue-900 text-blue-700">일본 팝</a></li>
+        <li><a href="latinpop.html" class="px-3 py-1 rounded-xl transition hover:bg-blue-200/60 hover:text-blue-900 focus:bg-blue-300/70 focus:text-blue-900 text-blue-700">라틴 팝</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="h-16"></div>
+  <main class="flex-1 flex flex-col items-center justify-start py-8 px-2 md:px-0">
+    <div class="backdrop-blur-2xl bg-white/30 border border-white/40 shadow-2xl rounded-3xl max-w-2xl w-full px-8 py-8 text-center mb-10 animate-fadein">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="미국 국기" class="w-24 h-16 mx-auto mb-4 rounded-lg shadow-lg border border-white/60 bg-white/30 animate-fadein-delay-1" loading="lazy">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-blue-700 mb-4 tracking-wide drop-shadow animate-fadein-delay-2">미국 팝(US POP)이란?</h1>
+      <p class="text-gray-700 text-lg md:text-xl leading-relaxed mb-4 animate-fadein-delay-3">
+        <span class="text-blue-600 font-bold">미국 팝(US POP)</span>은 미국에서 발전한 대중음악 장르로, 20세기 초반부터 현재까지 세계 음악 시장을 주도해왔습니다.<br>
+        재즈, 록앤롤, R&B, 힙합, 컨트리, EDM 등 다양한 장르가 융합되어 있으며, 시대별로 다양한 음악적 혁신과 트렌드를 만들어냈습니다.<br>
+        미국 팝은 글로벌 스타의 탄생지이자, 음악 산업의 중심지로서 전 세계 음악 문화에 큰 영향을 미치고 있습니다.
+      </p>
+      <div class="mt-8 text-left space-y-6 animate-fadein-delay-4">
+        <h2 class="text-2xl font-bold text-blue-800 mb-2">미국 팝의 역사</h2>
+        <p class="text-gray-700 text-base md:text-lg">미국 팝은 1950년대 엘비스 프레슬리(Elvis Presley)의 록앤롤, 1960~70년대 마이클 잭슨(Michael Jackson), 마돈나(Madonna) 등 슈퍼스타의 등장, 1990년대 이후 브리트니 스피어스, 비욘세, 테일러 스위프트, 저스틴 비버 등 다양한 아티스트의 활약으로 발전해왔습니다.</p>
+        <h2 class="text-2xl font-bold text-blue-800 mb-2">대표 아티스트</h2>
+        <ul class="list-disc pl-6 text-gray-700 text-base md:text-lg space-y-1">
+          <li>마이클 잭슨(Michael Jackson)</li>
+          <li>마돈나(Madonna)</li>
+          <li>브리트니 스피어스(Britney Spears)</li>
+          <li>비욘세(Beyoncé)</li>
+          <li>테일러 스위프트(Taylor Swift)</li>
+          <li>저스틴 비버(Justin Bieber)</li>
+        </ul>
+        <h2 class="text-2xl font-bold text-blue-800 mb-2">특징</h2>
+        <ul class="list-disc pl-6 text-gray-700 text-base md:text-lg space-y-1">
+          <li>장르의 다양성과 혁신</li>
+          <li>글로벌 스타와 대형 음악 시상식(그래미 어워드 등)</li>
+          <li>음악 산업의 중심지(할리우드, 뉴욕 등)</li>
+          <li>대중문화와 패션, 영화 등과의 융합</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer class="text-center text-blue-900 text-xs py-4 opacity-70">
+    © 2024 미국 팝(US POP) 소개 페이지
+  </footer>
+</body>
+</html> 
